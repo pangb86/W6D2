@@ -1,0 +1,80 @@
+html, body, figure, figcaption, ul, li, h1, title {
+  margin:0 auto;
+  font-family: "Permanent Marker", cursive;
+}
+
+.grid {
+  width: 840px;
+  height: 900px;
+  list-style: none;
+
+  position: relative;
+}
+
+.cell {
+  float: left;
+  left: 0px;
+  width: 270px;
+  height: 270px;
+  border: 5px solid #000;
+  background-image: url(https://ih1.redbubble.net/image.151630040.0653/flat,800x800,075,f.u2.jpg);
+  background-size: 270px 270px;
+  background-repeat: no-repeat;
+  transition-duration: 2s;
+}
+
+.cell:hover {
+  background: linear-gradient(45deg, blue, aqua);
+  transition-duration: 0.5s;
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px #888888;
+  cursor: help;
+}
+
+
+
+.game-over li {
+  color: red;
+  cursor: default;
+  background: white;
+}
+
+.x,
+.o {
+  font-size: 144px;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: 10px 20px 10px #888888;
+  text
+  font-weight: 700;
+  background: white;
+  float: left;
+  left: 0px;
+  width: 270px;
+  height: 270px;
+  border: 5px solid #000;
+}
+
+.x:hover,
+.o:hover {
+  background: white;
+}
+
+.x:after,
+.o:after {
+  display: block;
+  width: 100%;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.winner-x .x,
+.winner-o .o {
+  background: green;
+  color: white;
+  text-shadow: 10px 10px 20px #000;
+}
+
+figcaption {
+  font-size: 30px;
+}
